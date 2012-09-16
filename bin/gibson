@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# 0. Generate SSH key
+# 1. Install Homebrew & Formulae
+# 2. Install NPM & Packages
+# 3. Install Ruby 1.9.3 and Gems
+# 4. Install ZSH and oh-my-zsh
