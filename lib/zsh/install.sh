@@ -5,6 +5,8 @@ command -v brew >/dev/null 2>&1 || {
   exit 1;
 }
 
-brew update
+echo "Installing ZSH ..."
 brew install zsh
+
+echo "Installing oh-my-zsh ..."
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh

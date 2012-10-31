@@ -5,5 +5,5 @@ command -v brew >/dev/null 2>&1 || {
   exit 1;
 }
 
-brew update
+echo "Installing git ..."
 brew install git

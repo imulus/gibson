@@ -12,6 +12,7 @@ command -v ruby-build >/dev/null 2>&1 || {
 
 readonly RUBY_VERSION="1.9.3-p194"
 
+echo "Installing Ruby 1.9.3-p194 ..."
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
 rbenv rehash
