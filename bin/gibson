@@ -1,7 +1,17 @@
 #!/usr/bin/env sh
 
-# 0. Generate SSH key
-# 1. Install Homebrew & Formulae
-# 2. Install NPM & Packages
-# 3. Install Ruby 1.9.3 and Gems
-# 4. Install ZSH and oh-my-zsh
+libs=( ssh/keygen.sh
+       brew/install.sh
+       brew/formulae.sh
+       git/install.sh
+       git/config.sh
+       npm/install.sh
+       npm/packages.sh
+       ruby/install.sh
+       ruby/gems.sh
+       zsh/install.sh )
+
+for lib in ${libs[@]}
+do
+  curl https://raw.github.com/imulus/gibson/master/lib/$lib | sh
+done
