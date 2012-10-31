@@ -13,5 +13,5 @@ libs=( ssh/keygen.sh
 
 for lib in ${libs[@]}
 do
-  curl https://raw.github.com/imulus/gibson/master/lib/$lib | sh
+  curl -sL https://raw.github.com/imulus/gibson/master/lib/$lib | sh
 done
