@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 libs=( ssh/keygen.sh
        brew/install.sh
@@ -13,5 +13,5 @@ libs=( ssh/keygen.sh
 
 for lib in ${libs[@]}
 do
-  curl -sL https://raw.github.com/imulus/gibson/master/lib/$lib | sh
+  curl -sL https://raw.github.com/imulus/gibson/master/lib/$lib | bash
 done

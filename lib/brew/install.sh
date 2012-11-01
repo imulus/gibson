@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 echo "Fixing permissions ..."
 sudo mkdir -p /usr/local

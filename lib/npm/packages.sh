@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 command -v npm >/dev/null 2>&1 || {
   echo >&2 "NPM is required but not installed. Aborting.";

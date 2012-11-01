@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 command -v gem >/dev/null 2>&1 || {
   echo >&2 "RubyGems is required but not installed. Aborting.";
