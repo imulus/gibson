@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
-libs=( ssh/keygen.sh
-       brew/install.sh
+libs=( brew/install.sh
        brew/formulae.sh
        git/install.sh
        git/config.sh
-       npm/install.sh
        npm/packages.sh
+       zsh/install.sh
        ruby/install.sh
        ruby/gems.sh
-       zsh/install.sh )
+       ssh/keygen.sh )
 
 for lib in ${libs[@]}
 do
