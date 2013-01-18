@@ -11,4 +11,4 @@ clear
 echo "Installing Homebrew ..."
 ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 
-export PATH='/usr/local/bin:$PATH'
+export PATH=/usr/local/bin:$PATH
