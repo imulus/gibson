@@ -1,51 +1,17 @@
-#!/usr/bin/env bash
+brew install ack
+brew install git
+brew install git-flow
+brew install heroku-toolbelt
+brew install node
+brew install rbenv
+brew install rbenv-gem-rehash
+brew install ruby-build
+brew install sqlite
+brew install tmux
+brew install reattach-to-user-namespace
+brew install imagemagick
+brew install tree
+brew install wget
+brew install vim
+brew install zsh
 
-clear
-
-command -v brew >/dev/null 2>&1 || {
-  echo >&2 "Homebrew is required but not installed. Aborting.";
-  exit 1;
-}
-
-echo "Installing ack ..."
-brew install ack         # source code search tool
-
-clear
-
-echo "Installing gitflow ..."
-brew install git-flow    # git branching model
-
-clear
-
-echo "Installing Node.js ..."
-brew install node        # server-side javascript interpreter
-
-clear
-
-echo "Installing rbenv ..."
-brew install rbenv       # simple ruby version management
-
-clear
-
-echo "Installing ruby-build ..."
-brew install ruby-build  # compile and install different versions of ruby
-
-clear
-
-echo "Installing sqlite ..."
-brew install sqlite      # SQL database engine
-
-clear
-
-echo "Installing tmux ..."
-brew install tmux        # terminal multiplexer
-
-clear
-
-echo "Installing tree ..."
-brew install tree        # recursive directory listing
-
-clear
-
-echo "Installing wget ..."
-brew install wget        # retrieves content from web servers

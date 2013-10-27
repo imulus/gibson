@@ -1,16 +1,45 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-libs=( brew/install.sh
-       brew/formulae.sh
-       git/install.sh
-       git/config.sh
-       npm/packages.sh
-       zsh/install.sh
-       ruby/install.sh
-       ruby/gems.sh
-       ssh/keygen.sh )
+set -e
 
-for lib in ${libs[@]}
-do
-  curl -sL https://raw.github.com/imulus/gibson/master/lib/$lib | bash
-done
+[[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
+
+sudo mkdir -p /usr/local
+sudo chown -R `whoami` /usr/local
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+brew install ack
+brew install git
+brew install git-flow
+brew install heroku-toolbelt
+brew install node
+brew install rbenv
+brew install rbenv-gem-rehash
+brew install ruby-build
+brew install sqlite
+brew install tmux
+brew install reattach-to-user-namespace
+brew install imagemagick
+brew install tree
+brew install wget
+brew install vim
+brew install zsh
+
+npm install -g coffee-script
+npm install -g grunt-cli
+npm install -g less
+npm install -g mocha
+npm install -g recess
+npm install -g uglify-js
+
+eval "$(rbenv init -)"
+rbenv install 1.9.3-p448
+rbenv install 2.0.0-p247
+rbenv global 2.0.0-p247
+rbenv rehash
+
+gem update --system
+gem install bundler
+gem install pg
+gem install rails
+
