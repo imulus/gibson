@@ -1,9 +1,12 @@
 # Gibson
 
-![Hack the Planet](http://i.imgur.com/uDdsD.gif)
+Did your mom buy you a puter for Christmas? Quickly turn it into the ultimate hacking machine.
 
-Quickly turn your shiny new 'puter into the ultimate hacking machine.
+![Hack the Planet](http://i.imgur.com/RgmdSBa.gif)
 
 ## Install
 
-    curl -sL https://raw.github.com/imulus/gibson/master/bin/gibson | sh
+```bash
+curl -sL https://raw.github.com/taylorsmith/gibson/master/bin/gibson | sh
+```
+
