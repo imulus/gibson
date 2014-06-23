@@ -6,4 +6,5 @@ command -v brew &>/dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Home
 brew doctor
 
 brew tap caskroom/cask
+brew tap homebrew/binary
 brew tap thoughtbot/formulae
