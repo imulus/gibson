@@ -1,10 +1,3 @@
-#!/usr/bin/env sh
-
-set -e
-
-sudo -v
-
-[[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
@@ -103,57 +96,3 @@ defaults write com.apple.TextEdit RichText -int 0
 # Open and save files as UTF-8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-sudo mkdir -p /usr/local /opt/homebrew-cask
-sudo chown -R `whoami` /usr/local /opt/homebrew-cask
-
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew install ack
-brew install direnv
-brew install git
-brew install git-extras
-brew install gitsh
-brew install heroku-toolbelt
-brew install imagemagick
-brew install node
-brew install packer
-brew install postgresql
-brew install rbenv
-brew install rbenv-gem-rehash
-brew install reattach-to-user-namespace
-brew install ruby-build
-brew install ssh-copy-id
-brew install the_silver_searcher
-brew install tmux
-brew install tree
-brew install vim
-brew install wget
-brew install zsh
-brew cask install airfoil
-brew cask install cord
-brew cask install dropbox
-brew cask install flux
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install rdio
-brew cask install screenhero
-brew cask install sizeup
-brew cask install transmission
-brew cask install transmit
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vlc
-npm install -g bower
-npm install -g grunt-cli
-eval "$(rbenv init -)"
-
-rbenv install 1.9.3-p547
-rbenv install 2.0.0-p481
-rbenv install 2.1.1
-
-rbenv global 2.1.1
-
-rbenv rehash
-gem update --system
-
-gem install bundler
-gem install rails
