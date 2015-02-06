@@ -1,7 +1,8 @@
 sudo mkdir -p /usr/local /opt/homebrew-cask
 sudo chown -R `whoami` /usr/local /opt/homebrew-cask
 
-command -v brew &>/dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+command -v brew &>/dev/null ||
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
 
