@@ -1,5 +1,6 @@
 brew install ack
 brew install brew-cask
+brew install dockutil
 brew install git
 brew install git-extras
 brew install gitsh

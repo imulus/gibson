@@ -17,4 +17,5 @@ build:
 	cat ./lib/npm/packages.sh  >> ./bin/gibson
 	cat ./lib/ruby/install.sh  >> ./bin/gibson
 	cat ./lib/ruby/gems.sh     >> ./bin/gibson
+	cat ./lib/osx/dock.sh      >> ./bin/gibson
 	cat ./lib/zsh/install.sh   >> ./bin/gibson

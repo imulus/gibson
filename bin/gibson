@@ -18,6 +18,7 @@ brew tap homebrew/binary
 brew tap thoughtbot/formulae
 brew install ack
 brew install brew-cask
+brew install dockutil
 brew install git
 brew install git-extras
 brew install gitsh
@@ -93,6 +94,13 @@ gem install bundler
 gem install rails
 
 rbenv shell --unset
+dockutil --remove all
+
+dockutil --add ~/Applications/Google\ Chrome.app
+dockutil --add ~/Applications/Slack.app
+dockutil --add ~/Applications/Rdio.app
+dockutil --add ~/Applications/YNAB\ 4.app
+dockutil --add /Applications/Utilities/Terminal.app
 echo /usr/local/bin/zsh >> /etc/shells
 
 chsh -s /usr/local/bin/zsh
