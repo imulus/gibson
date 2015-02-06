@@ -42,16 +42,18 @@ brew install tree
 brew install vim
 brew install wget
 brew install zsh
+brew cask install 1password
 brew cask install airfoil
 brew cask install caffeine
+brew cask install cloud
 brew cask install divvy
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install macvim
-brew cask install onepassword
 brew cask install rdio
 brew cask install screenhero
 brew cask install slack
+brew cask install superduper
 brew cask install transmission
 brew cask install transmit
 brew cask install vagrant
