@@ -11,7 +11,6 @@ build:
 	echo "set -e\n"            >> ./bin/gibson
 	echo "sudo -v\n"           >> ./bin/gibson
 	cat ./lib/ssh/keygen.sh    >> ./bin/gibson
-	cat ./lib/osx/defaults.sh  >> ./bin/gibson
 	cat ./lib/brew/install.sh  >> ./bin/gibson
 	cat ./lib/brew/formulae.sh >> ./bin/gibson
 	cat ./lib/brew/casks.sh    >> ./bin/gibson
