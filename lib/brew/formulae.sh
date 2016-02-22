@@ -10,7 +10,6 @@ brew install httpie
 brew install hub
 brew install imagemagick
 brew install node
-brew install packer
 brew install postgresql
 brew install rbenv
 brew install rbenv-gem-rehash
