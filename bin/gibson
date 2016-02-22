@@ -8,8 +8,7 @@ sudo -v
 sudo mkdir -p /usr/local /opt/homebrew-cask
 sudo chown -R `whoami` /usr/local /opt/homebrew-cask
 
-command -v brew &>/dev/null ||
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
 
@@ -28,7 +27,6 @@ brew install httpie
 brew install hub
 brew install imagemagick
 brew install node
-brew install packer
 brew install postgresql
 brew install rbenv
 brew install rbenv-gem-rehash
@@ -43,66 +41,84 @@ brew install vim
 brew install wget
 brew install zsh
 brew cask install 1password
+brew cask install adobe-creative-cloud
+brew cask install adobe-photoshop-cc
 brew cask install airfoil
 brew cask install caffeine
 brew cask install cloud
 brew cask install divvy
 brew cask install dropbox
 brew cask install google-chrome
+brew cask install google-drive
 brew cask install macvim
-brew cask install rdio
-brew cask install screenhero
 brew cask install slack
+brew cask install sonos
+brew cask install spotify
 brew cask install superduper
 brew cask install transmission
-brew cask install transmit
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 brew cask install ynab
 npm install --global bower
-npm install --global browserify
-npm install --global coffee-script
 npm install --global grunt-cli
 npm install --global gulp
 npm install --global http-server
 npm install --global jshint
-npm install --global jspm
 npm install --global karma-cli
-npm install --global less
 npm install --global live-server
 npm install --global mocha
-npm install --global psi
-npm install --global stylestats
-npm install --global yuidocjs
 eval "$(rbenv init -)"
 
-rbenv install 2.0.0-p598
-rbenv install 2.2.0
-
-rbenv global 2.2.0
-
+rbenv install 2.3.0
+rbenv global 2.3.0
 rbenv rehash
-rbenv shell 2.0.0-p598
-
-gem update --system
-gem install bundler
-gem install rails
-
-rbenv shell 2.2.0
+rbenv shell 2.3.0
 
 gem update --system
 gem install bundler
 gem install rails
 
 rbenv shell --unset
+sudo sh -c "echo /usr/local/bin/zsh >> /etc/shells"
+
+chsh -s /usr/local/bin/zsh
 dockutil --remove all
 
 dockutil --add ~/Applications/Google\ Chrome.app
 dockutil --add ~/Applications/Slack.app
-dockutil --add ~/Applications/Rdio.app
+dockutil --add ~/Applications/Spotify.app
+dockutil --add ~/Applications/Sonos.app
 dockutil --add ~/Applications/YNAB\ 4.app
+dockutil --add /Applications/Calendar.app
 dockutil --add /Applications/Utilities/Terminal.app
-echo /usr/local/bin/zsh >> /etc/shells
+# Hide icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
-chsh -s /usr/local/bin/zsh
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable press-and-hold for keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Set the icon size of Dock items to 48 pixels
+defaults write com.apple.dock tilesize -int 48
+
+# Top left screen corner → Put display to sleep
+defaults write com.apple.dock wvous-tl-corner -int 10
+defaults write com.apple.dock wvous-tl-modifier -int 1048576
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+killall Dock
+killall Finder
