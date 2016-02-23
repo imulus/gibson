@@ -12,7 +12,6 @@ brew install imagemagick
 brew install node
 brew install postgresql
 brew install rbenv
-brew install rbenv-gem-rehash
 brew install reattach-to-user-namespace
 brew install ruby-build
 brew install ssh-copy-id

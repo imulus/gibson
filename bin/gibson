@@ -13,6 +13,7 @@ sudo chown -R `whoami` /usr/local /opt/homebrew-cask
 brew doctor
 
 brew tap caskroom/cask
+brew tap caskroom/fonts
 brew tap homebrew/binary
 brew tap thoughtbot/formulae
 brew install ack
@@ -29,7 +30,6 @@ brew install imagemagick
 brew install node
 brew install postgresql
 brew install rbenv
-brew install rbenv-gem-rehash
 brew install reattach-to-user-namespace
 brew install ruby-build
 brew install ssh-copy-id
@@ -40,7 +40,6 @@ brew install tree
 brew install vim
 brew install wget
 brew install zsh
-brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install adobe-photoshop-cc
 brew cask install airfoil
@@ -48,7 +47,7 @@ brew cask install caffeine
 brew cask install cloud
 brew cask install divvy
 brew cask install dropbox
-brew cask install google-chrome
+brew cask install font-inconsolata-g-for-powerline
 brew cask install google-drive
 brew cask install macvim
 brew cask install slack

@@ -6,5 +6,6 @@ sudo chown -R `whoami` /usr/local /opt/homebrew-cask
 brew doctor
 
 brew tap caskroom/cask
+brew tap caskroom/fonts
 brew tap homebrew/binary
 brew tap thoughtbot/formulae

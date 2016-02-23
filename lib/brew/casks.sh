@@ -1,4 +1,3 @@
-brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install adobe-photoshop-cc
 brew cask install airfoil
@@ -6,7 +5,7 @@ brew cask install caffeine
 brew cask install cloud
 brew cask install divvy
 brew cask install dropbox
-brew cask install google-chrome
+brew cask install font-inconsolata-g-for-powerline
 brew cask install google-drive
 brew cask install macvim
 brew cask install slack
